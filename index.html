@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Erden Kardeşler Döşeme</title>
+<meta name="description" content="Erden Kardeşler Döşeme - Koltuk döşeme, tamir ve özel üretim. Adres, telefon ve çalışma saatleri için iletişime geçin.">
+<style>
+:root {
+--accent: #0b6efd;
+--bg: #f9fafc;
+--card: #fff;
+}
+* { box-sizing: border-box; }
+body { margin:0; font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); color:#222; }
+header { background: var(--accent); color:#fff; padding: 32px 16px; text-align:center; }
+header h1 { margin:0; font-size:28px; font-weight:700; }
+header p { margin:8px 0 0; font-size:16px; opacity:0.9; }
+
+
+.container { max-width:1200px; margin:0 auto; padding:24px; }
+.grid { display:grid; grid-template-columns:2fr 1fr; gap:24px; }
+
+
+.card { background: var(--card); border-radius:16px; padding:20px; box-shadow:0 4px 12px rgba(0,0,0,0.05); margin-bottom:24px; transition:transform .2s; }
+.card:hover { transform:translateY(-2px); }
+h2,h3 { margin-top:0; color:#111; }
+
+
+.gallery { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:12px; }
+.gallery img { width:100%; border-radius:12px; object-fit:cover; }
+
+
+.contact-list { list-style:none; margin:0; padding:0; }
+.contact-list li { padding:10px 0; border-bottom:1px solid #eee; font-size:15px; }
+.contact-list li strong { display:block; margin-bottom:4px; color:#555; }
+
+
+form input, form textarea, form button {
+width:100%; padding:12px; border-radius:8px; border:1px solid #ddd; font-size:15px;
+}
+form textarea { min-height:100px; resize:vertical; }
+form button { margin-top:10px; background: var(--accent); border:none; color:#fff; font-weight:600; cursor:pointer; transition:background .2s; }
+form button:hover { background:#084298; }
+
+
+footer { text-align:center; padding:24px; font-size:14px; color:#777; background:#fff; margin-top:40px; border-top:1px solid #eee; }
+@media(max-width:900px){ .grid{ grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<header>
+<h1>Erden Kardeşler Döşeme</h1>
+<p>Koltuk döşeme, tamirat ve özel üretim hizmetleri</p>
+</header>
+
+
+<div class="container">
+<div class="grid">
+<main>
+<div class="card">
+<h2>Hakkımızda</h2>
+<p>Yerel döşeme atölyesi. Koltuk döşeme, kılıf değişimi, sünger yenileme ve özel üretim hizmeti veriyoruz. (Buraya işletme profilindeki gerçek açıklamayı ekleyin.)</p>
+</div>
+
+
+<div class="card">
+<h2>Galeri</h2>
+<div class="gallery">
+<img src="https://via.placeholder.com/600x400?text=Foto+1" alt="Foto 1">
+<img src="https://via.placeholder.com/600x400?text=Foto+2" alt="Foto 2">
+<img src="https://via.placeholder.com/600x400?text=Foto+3" alt="Foto 3">
+<img src="https://via.placeholder.com/600x400?text=Foto+4" alt="Foto 4">
+</div>
+</div>
+
+
+<div class="card">
+<h2>Çalışma Saatleri</h2>
+<p>Hafta içi: 09:00 - 18:00<br>Cumartesi: 09:00 - 14:00<br>Pazar: Kapalı</p>
+</div>
+</main>
+
+
+<aside>
+<div class="card">
+<h3>İletişim</h3>
+<ul class="contact-list">
+<li><strong>Adres:</strong> İşletme adresi buraya</li>
+<li><strong>Telefon:</strong> +90 (5xx) xxx xx xx</li>
+<li><strong>Sosyal Medya:</strong> Instagram: @ornek</li>
+</ul>
+</div>
+
+
+<div class="card">
+<h3>Konum</h3>
+<div style="width:100%;height:200px;background:#f2f2f2;border-radius:12px;display:flex;align-items:center;justify-content:center;color:#999">Google Harita Embed</div>
+</div>
+
+
+<div class="card">
+<h3>Mesaj Gönder</h3>
+<form onsubmit="event.preventDefault();alert('Mesaj gönderildi (demo)')">
+<input type="text" name="isim" placeholder="Adınız" required>
+<input type="text" name="telefon" placeholder="Telefon">
+<textarea name="mesaj" placeholder="Mesajınız" required></textarea>
+<button type="submit">Gönder</button>
+</form>
+</div>
+</aside>
+</div>
+</div>
+
+
+<footer>
+© 2025 Erden Kardeşler Döşeme — Tüm Hakları Saklıdır
+</footer>
+</body>
+</html>
